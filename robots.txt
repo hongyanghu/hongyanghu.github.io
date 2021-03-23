@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /home/
+Allow: /about/
+Allow: /archives/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+Disallow: /categories/
+
+Sitemap: http://www.dragonbaby308.com/sitemap.xml
+Sitemap: http://www.dragonbaby308.com/baidusitemap.xml

@@ -20,16 +20,18 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="MMdetection使用教程本地环境cuda10.2、MMCV:1.3.2、TorchVision: 0.6.1OpenCV: 4.4.0MMCV: 1.3.2MMCV Compiler: GCC 7.3MMCV CUDA Compiler: 10.2MMDetection: 2.11.0+8d568fbPyTorch: 1.5.1 数据集配置在mmdet下创建myDataset.py 1234">
+  <meta name="description" content="MMdetection使用教程MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 OpenMMLab 项目的一部分。 主分支代码目前支持 PyTorch 1.3 以上的版本。 v1.x 的历史版本支持 PyTorch 1.1 到 1.4，但是我们强烈建议用户使用新的 2.x 的版本，新的版本速度更快，性能更高，有更优雅的代码设计，对用户使用也更加友好。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Love And Peace">
+<meta property="og:title" content="MMdetection使用教程">
 <meta property="og:url" content="http://example.com/2021/04/30/MMdetection%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Love And Peace">
-<meta property="og:description" content="MMdetection使用教程本地环境cuda10.2、MMCV:1.3.2、TorchVision: 0.6.1OpenCV: 4.4.0MMCV: 1.3.2MMCV Compiler: GCC 7.3MMCV CUDA Compiler: 10.2MMDetection: 2.11.0+8d568fbPyTorch: 1.5.1 数据集配置在mmdet下创建myDataset.py 1234">
+<meta property="og:description" content="MMdetection使用教程MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 OpenMMLab 项目的一部分。 主分支代码目前支持 PyTorch 1.3 以上的版本。 v1.x 的历史版本支持 PyTorch 1.1 到 1.4，但是我们强烈建议用户使用新的 2.x 的版本，新的版本速度更快，性能更高，有更优雅的代码设计，对用户使用也更加友好。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-30T02:08:00.638Z">
-<meta property="article:modified_time" content="2021-04-30T02:08:00.638Z">
+<meta property="article:published_time" content="2021-04-30T02:18:37.000Z">
+<meta property="article:modified_time" content="2021-04-30T02:23:21.946Z">
 <meta property="article:author" content="LoveAndPeace">
+<meta property="article:tag" content="深度学习">
+<meta property="article:tag" content="目标检测">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/2021/04/30/MMdetection%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
@@ -45,7 +47,7 @@
   };
 </script>
 
-  <title> | Love And Peace</title>
+  <title>MMdetection使用教程 | Love And Peace</title>
   
 
 
@@ -211,7 +213,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          MMdetection使用教程
         </h1>
 
         <div class="post-meta">
@@ -220,8 +222,18 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-04-30 10:08:00" itemprop="dateCreated datePublished" datetime="2021-04-30T10:08:00+08:00">2021-04-30</time>
+              <time title="创建时间：2021-04-30 10:18:37 / 修改时间：10:23:21" itemprop="dateCreated datePublished" datetime="2021-04-30T10:18:37+08:00">2021-04-30</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">深度学习</span></a>
+                </span>
             </span>
 
           
@@ -235,7 +247,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="MMdetection使用教程"><a href="#MMdetection使用教程" class="headerlink" title="MMdetection使用教程"></a>MMdetection使用教程</h1><p><strong>本地环境</strong><br>cuda10.2、<br>MMCV:1.3.2、<br>TorchVision: 0.6.1<br>OpenCV: 4.4.0<br>MMCV: 1.3.2<br>MMCV Compiler: GCC 7.3<br>MMCV CUDA Compiler: 10.2<br>MMDetection: 2.11.0+8d568fb<br>PyTorch: 1.5.1</p>
+        <h1 id="MMdetection使用教程"><a href="#MMdetection使用教程" class="headerlink" title="MMdetection使用教程"></a>MMdetection使用教程</h1><p>MMDetection 是一个基于 PyTorch 的目标检测开源工具箱。它是 <a target="_blank" rel="noopener" href="https://openmmlab.com/">OpenMMLab</a> 项目的一部分。</p>
+<p>主分支代码目前支持 PyTorch 1.3 以上的版本。</p>
+<p>v1.x 的历史版本支持 PyTorch 1.1 到 1.4，但是我们强烈建议用户使用新的 2.x 的版本，新的版本速度更快，性能更高，有更优雅的代码设计，对用户使用也更加友好。</p>
+<span id="more"></span> 
+
+<p><strong>本地环境</strong><br>cuda10.2、<br>MMCV:1.3.2、<br>TorchVision: 0.6.1<br>OpenCV: 4.4.0<br>MMCV: 1.3.2<br>MMCV Compiler: GCC 7.3<br>MMCV CUDA Compiler: 10.2<br>MMDetection: 2.11.0+8d568fb<br>PyTorch: 1.5.1</p>
 <h2 id="数据集配置"><a href="#数据集配置" class="headerlink" title="数据集配置"></a>数据集配置</h2><p>在mmdet下创建myDataset.py</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> mmcv.utils <span class="keyword">import</span> print_log</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> mmdet.core <span class="keyword">import</span> eval_map, eval_recalls</span><br><span class="line"><span class="keyword">from</span> .builder <span class="keyword">import</span> DATASETS</span><br><span class="line"><span class="keyword">from</span> .xml_style <span class="keyword">import</span> XMLDataset</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@DATASETS.register_module()</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyDataset</span>(<span class="params">XMLDataset</span>):</span></span><br><span class="line"></span><br><span class="line">    CLASSES = (<span class="string">&#x27;columnar&#x27;</span>, <span class="string">&#x27;linear&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, **kwargs</span>):</span></span><br><span class="line">        <span class="built_in">super</span>(MyDataset, self).__init__(**kwargs)</span><br><span class="line">        <span class="keyword">if</span> <span class="string">&#x27;VOC2007&#x27;</span> <span class="keyword">in</span> self.img_prefix:</span><br><span class="line">            self.year = <span class="number">2007</span></span><br><span class="line">        <span class="keyword">elif</span> <span class="string">&#x27;VOC2012&#x27;</span> <span class="keyword">in</span> self.img_prefix:</span><br><span class="line">            self.year = <span class="number">2012</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">&#x27;Cannot infer dataset year from img_prefix&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">evaluate</span>(<span class="params">self,</span></span></span><br><span class="line"><span class="function"><span class="params">                 results,</span></span></span><br><span class="line"><span class="function"><span class="params">                 metric=<span class="string">&#x27;mAP&#x27;</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                 logger=<span class="literal">None</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                 proposal_nums=(<span class="params"><span class="number">100</span>, <span class="number">300</span>, <span class="number">1000</span></span>),</span></span></span><br><span class="line"><span class="function"><span class="params">                 iou_thr=<span class="number">0.5</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                 scale_ranges=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;Evaluate in VOC protocol.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            results (list[list | tuple]): Testing results of the dataset.</span></span><br><span class="line"><span class="string">            metric (str | list[str]): Metrics to be evaluated. Options are</span></span><br><span class="line"><span class="string">                &#x27;mAP&#x27;, &#x27;recall&#x27;.</span></span><br><span class="line"><span class="string">            logger (logging.Logger | str, optional): Logger used for printing</span></span><br><span class="line"><span class="string">                related information during evaluation. Default: None.</span></span><br><span class="line"><span class="string">            proposal_nums (Sequence[int]): Proposal number used for evaluating</span></span><br><span class="line"><span class="string">                recalls, such as recall@100, recall@1000.</span></span><br><span class="line"><span class="string">                Default: (100, 300, 1000).</span></span><br><span class="line"><span class="string">            iou_thr (float | list[float]): IoU threshold. Default: 0.5.</span></span><br><span class="line"><span class="string">            scale_ranges (list[tuple], optional): Scale ranges for evaluating</span></span><br><span class="line"><span class="string">                mAP. If not specified, all bounding boxes would be included in</span></span><br><span class="line"><span class="string">                evaluation. Default: None.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Returns:</span></span><br><span class="line"><span class="string">            dict[str, float]: AP/recall metrics.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> <span class="built_in">isinstance</span>(metric, <span class="built_in">str</span>):</span><br><span class="line">            <span class="keyword">assert</span> <span class="built_in">len</span>(metric) == <span class="number">1</span></span><br><span class="line">            metric = metric[<span class="number">0</span>]</span><br><span class="line">        allowed_metrics = [<span class="string">&#x27;mAP&#x27;</span>, <span class="string">&#x27;recall&#x27;</span>]</span><br><span class="line">        <span class="keyword">if</span> metric <span class="keyword">not</span> <span class="keyword">in</span> allowed_metrics:</span><br><span class="line">            <span class="keyword">raise</span> KeyError(<span class="string">f&#x27;metric <span class="subst">&#123;metric&#125;</span> is not supported&#x27;</span>)</span><br><span class="line">        annotations = [self.get_ann_info(i) <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(self))]</span><br><span class="line">        eval_results = OrderedDict()</span><br><span class="line">        iou_thrs = [iou_thr] <span class="keyword">if</span> <span class="built_in">isinstance</span>(iou_thr, <span class="built_in">float</span>) <span class="keyword">else</span> iou_thr</span><br><span class="line">        <span class="keyword">if</span> metric == <span class="string">&#x27;mAP&#x27;</span>:</span><br><span class="line">            <span class="keyword">assert</span> <span class="built_in">isinstance</span>(iou_thrs, <span class="built_in">list</span>)</span><br><span class="line">            <span class="keyword">if</span> self.year == <span class="number">2007</span>:</span><br><span class="line">                ds_name = <span class="string">&#x27;voc07&#x27;</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                ds_name = self.CLASSES</span><br><span class="line">            mean_aps = []</span><br><span class="line">            <span class="keyword">for</span> iou_thr <span class="keyword">in</span> iou_thrs:</span><br><span class="line">                print_log(<span class="string">f&#x27;\n<span class="subst">&#123;<span class="string">&quot;-&quot;</span> * <span class="number">15</span>&#125;</span>iou_thr: <span class="subst">&#123;iou_thr&#125;</span><span class="subst">&#123;<span class="string">&quot;-&quot;</span> * <span class="number">15</span>&#125;</span>&#x27;</span>)</span><br><span class="line">                mean_ap, _ = eval_map(</span><br><span class="line">                    results,</span><br><span class="line">                    annotations,</span><br><span class="line">                    scale_ranges=<span class="literal">None</span>,</span><br><span class="line">                    iou_thr=iou_thr,</span><br><span class="line">                    dataset=ds_name,</span><br><span class="line">                    logger=logger)</span><br><span class="line">                mean_aps.append(mean_ap)</span><br><span class="line">                eval_results[<span class="string">f&#x27;AP<span class="subst">&#123;<span class="built_in">int</span>(iou_thr * <span class="number">100</span>):02d&#125;</span>&#x27;</span>] = <span class="built_in">round</span>(mean_ap, <span class="number">3</span>)</span><br><span class="line">            eval_results[<span class="string">&#x27;mAP&#x27;</span>] = <span class="built_in">sum</span>(mean_aps) / <span class="built_in">len</span>(mean_aps)</span><br><span class="line">        <span class="keyword">elif</span> metric == <span class="string">&#x27;recall&#x27;</span>:</span><br><span class="line">            gt_bboxes = [ann[<span class="string">&#x27;bboxes&#x27;</span>] <span class="keyword">for</span> ann <span class="keyword">in</span> annotations]</span><br><span class="line">            recalls = eval_recalls(</span><br><span class="line">                gt_bboxes, results, proposal_nums, iou_thr, logger=logger)</span><br><span class="line">            <span class="keyword">for</span> i, num <span class="keyword">in</span> <span class="built_in">enumerate</span>(proposal_nums):</span><br><span class="line">                <span class="keyword">for</span> j, iou <span class="keyword">in</span> <span class="built_in">enumerate</span>(iou_thr):</span><br><span class="line">                    eval_results[<span class="string">f&#x27;recall@<span class="subst">&#123;num&#125;</span>@<span class="subst">&#123;iou&#125;</span>&#x27;</span>] = recalls[i, j]</span><br><span class="line">            <span class="keyword">if</span> recalls.shape[<span class="number">1</span>] &gt; <span class="number">1</span>:</span><br><span class="line">                ar = recalls.mean(axis=<span class="number">1</span>)</span><br><span class="line">                <span class="keyword">for</span> i, num <span class="keyword">in</span> <span class="built_in">enumerate</span>(proposal_nums):</span><br><span class="line">                    eval_results[<span class="string">f&#x27;AR@<span class="subst">&#123;num&#125;</span>&#x27;</span>] = ar[i]</span><br><span class="line">        <span class="keyword">return</span> eval_results</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -272,6 +289,10 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag"># 深度学习</a>
+              <a href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" rel="tag"># 目标检测</a>
+          </div>
 
         
 
@@ -282,7 +303,10 @@
     <a href="/2021/03/23/SSM%E6%95%B4%E5%90%88%E7%BB%83%E4%B9%A0/" rel="prev" title="SSM整合练习">
       <i class="fa fa-chevron-left"></i> SSM整合练习
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/07/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="next" title="计算机网络">
+      计算机网络 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -366,20 +390,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -412,7 +436,7 @@
         <div class="widget-wrap">
             <div id="myCanvasContainer" class="widget tagcloud">
                 <canvas width="250" height="250" id="resCanvas" style="width=100%">
-                    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/SSM/" rel="tag">SSM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backBone/" rel="tag">backBone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag">深度学习</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" rel="tag">目标检测</a><span class="tag-list-count">1</span></li></ul>
+                    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/SSM/" rel="tag">SSM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/backBone/" rel="tag">backBone</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag">基础知识</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag">深度学习</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/" rel="tag">目标检测</a><span class="tag-list-count">2</span></li></ul>
                 </canvas>
             </div>
         </div>
